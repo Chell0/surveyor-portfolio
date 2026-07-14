@@ -1,0 +1,29 @@
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --accent-red: #e63946;
+  --accent-coral: #ff6b6b;
+  --gray-light: #f1f1f1;
+  --gray-medium: #888888;
+  --gray-dark: #333333;
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
