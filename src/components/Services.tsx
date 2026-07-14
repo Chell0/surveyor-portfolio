@@ -21,12 +21,12 @@ const Services = () => {
     {
       title: 'Construction Surveys',
       description: 'Stakeout and layout services for construction projects ensuring accurate positioning.',
-      icon: '️',
+      icon: '️🏗️',
     },
     {
       title: 'Land Development',
       description: 'Comprehensive surveying solutions for land development and subdivision projects.',
-      icon: '',
+      icon: '📜',
     },
     {
       title: 'GIS Mapping',
