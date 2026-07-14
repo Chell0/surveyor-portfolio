@@ -27,3 +27,9 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+/* Smooth scroll container*/
+.smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
