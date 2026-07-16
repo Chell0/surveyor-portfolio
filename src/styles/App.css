@@ -216,3 +216,74 @@
 .footer-links a:hover {
     color: var(--accent-red);
 }
+
+/*About*/
+.about {
+    padding: 6rem 5%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-image {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: var(--transition-smooth);
+}
+
+.about-image:hover img {
+    filter: grayscale(0%);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+}
+
+.skills-section {
+    margin-top: 3rem;
+}
+
+.skills-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-item {
+    padding: 1rem;
+    border-left: 4px solid var(--accent-red);
+    background: var(--gray-light);
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.skill-item:hover {
+    background: var(--accent-red);
+    color: var(--primary-white);
+    transform: translateX(10px);
+    cursor: pointer;
+}
