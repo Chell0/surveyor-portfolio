@@ -190,3 +190,29 @@
     font-size: 0.95rem;
     line-height: 1.6;
 }
+
+/*Footer*/
+.footer {
+    background: var(--primary-black);
+    color: var(--primary-white);
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--primary-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-red);
+}
