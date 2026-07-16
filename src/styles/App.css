@@ -287,3 +287,59 @@
     transform: translateX(10px);
     cursor: pointer;
 }
+
+/*Projects Section*/
+.projects {
+    padding: 6rem 5%;
+    background: var(--primary-black);
+    color: var(--primary-white);
+}
+
+.projects .section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.projects-subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--gray-medium);
+    font-size: 1.1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card:nth-child(odd) {
+    background: var(--primary-white);
+    color: var(--primary-black);
+}
+
+.project-card:nth-child(even) {
+    background: var(--gray-dark);
+    color: var(--primary-white);
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-card h3 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    text-transform: lowercase;
+}
