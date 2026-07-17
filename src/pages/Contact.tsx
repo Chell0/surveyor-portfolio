@@ -30,12 +30,12 @@ const Contact = () => {
     });
   }
   return (
-    <section className={`contact`}>
+    <section className="contact">
       <h1 className={`section-title ${inView ? 'fade-in' : ''}`}>Get In Touch</h1>
-      <div className={`contact-grid`} ref={ref}>
-        <form className={`contact-form`} onSubmit={handleSubmit}>
-          <div className={`form-group`}>
-            <label htmlFor={`name`}>Name</label>
+      <div className="contact-grid" ref={ref}>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -45,8 +45,8 @@ const Contact = () => {
               required
             />
           </div>
-          <div className={`form-group`}>
-            <label htmlFor={`email`}>Email</label>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -56,8 +56,8 @@ const Contact = () => {
               required
             />
           </div>
-          <div className={`form-group`}>
-            <label htmlFor={`phone`}>Phone</label>
+          <div className="form-group">
+            <label htmlFor="phone">Phone</label>
             <input
               type="tel"
               id="phone"
@@ -66,11 +66,11 @@ const Contact = () => {
               onChange={handleChange}
             />
           </div>
-          <div className={`form-group`}>
-            <label htmlFor={`message`}>Message</label>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
             <textarea
-              id={`message`}
-              name={`message`}
+              id="message"
+              name="message"
               value={formData.message}
               onChange={handleChange}
               required

@@ -25,7 +25,11 @@ const Header = () => {
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo">Charles Ochieng'</div>
+      <div className="logo">
+        <Link to="/" className="logo-link">
+          Charles Ochieng'
+        </Link>
+      </div>
       <nav className="nav">
         {navLinks.map((link) => (
           <Link key={link.to} to={link.to} className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}>
