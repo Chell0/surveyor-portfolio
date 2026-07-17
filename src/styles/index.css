@@ -1,0 +1,81 @@
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --accent-red: #e63946;
+  --accent-coral: #ff6b6b;
+  --gray-light: #f1f1f1;
+  --gray-medium: #888888;
+  --gray-dark: #333333;
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Smooth scroll container*/
+.smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scroll-reveal {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .hero,
+  .about-content,
+  .project-detail-header,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
