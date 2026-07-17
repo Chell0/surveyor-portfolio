@@ -11,7 +11,7 @@ const Header = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -32,7 +32,11 @@ const Header = () => {
       </div>
       <nav className="nav">
         {navLinks.map((link) => (
-          <Link key={link.to} to={link.to} className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}>
+          <Link
+            key={link.to}
+            to={link.to}
+            className={`nav-link ${location.pathname === link.to || (link.to !== '/' && location.pathname.startsWith(link.to)) ? 'active' : ''}`}
+          >
             {link.label}
           </Link>
         ))}

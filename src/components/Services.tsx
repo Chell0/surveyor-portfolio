@@ -44,7 +44,7 @@ const Services = () => {
       <h2 className={`section-title ${inView ? 'fade-in' : ''}`}>Services</h2>
       <div className="services-grid">
         {services.map((service, index) => (
-          <div key={index} className={`service-card ${inView ? 'scroll-reveal' : ''}`} style={{ transitionDelay: `${index * 0.1}s` }}>
+          <div key={service.title} className={`service-card ${inView ? 'scroll-reveal' : ''}`} style={{ transitionDelay: `${index * 0.1}s` }}>
             <div className="service-icon">{service.icon}</div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
