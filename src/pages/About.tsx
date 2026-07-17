@@ -57,10 +57,10 @@ const About = () => {
             <div className="skills-grid">
               {skills.map((skill, index) => (
                 <div
-                  key={index}
+                  key={skill}
                   className={`skill-item ${inView ? 'scroll-reveal' : ''}`}
-                  style={{ transitionDelay: `${index * 0.1}s` }
-                }>
+                  style={{ transitionDelay: `${index * 0.1}s` }}
+                >
                   {index + 1}. {skill}
                 </div>
               ))}

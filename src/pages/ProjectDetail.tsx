@@ -14,18 +14,18 @@ const ProjectDetail = () => {
     title: slug?.toUpperCase() || 'PROJECT',
     description: `This project showcases the key developments made in ${slug}, featuring detailed insights into the work involved.`,
     images: [
-      '/images/lamu/lamu_1.jpg',
-      '/images/lamu/lamu_2.jpg',
-      '/images/lamu/lamu_3.jpg',
-      '/images/lamu/lamu_4.jpg',
-      '/images/lamu/lamu_5.jpg',
-      '/images/lamu/lamu_6.jpg',
-      '/images/lamu/lamu_7.jpg',
-      '/images/lamu/lamu_8.jpg',
-      '/images/lamu/lamu_9.jpg',
-      '/images/lamu/lamu_10.jpg',
-      '/images/lamu/lamu_11.jpg',
-      '/images/lamu/lamu_12.jpg',
+      `/images/${slug}/${slug}_1.jpg`,
+      `/images/${slug}/${slug}_2.jpg`,
+      `/images/${slug}/${slug}_3.jpg`,
+      `/images/${slug}/${slug}_4.jpg`,
+      `/images/${slug}/${slug}_5.jpg`,
+      `/images/${slug}/${slug}_6.jpg`,
+      `/images/${slug}/${slug}_7.jpg`,
+      `/images/${slug}/${slug}_8.jpg`,
+      `/images/${slug}/${slug}_9.jpg`,
+      `/images/${slug}/${slug}_10.jpg`,
+      `/images/${slug}/${slug}_11.jpg`,
+      `/images/${slug}/${slug}_12.jpg`,
     ],
   };
 
@@ -46,9 +46,9 @@ const ProjectDetail = () => {
       <div className="project-gallery">
         {project.images.map((image, index) => (
           <img
-            key={index}
+            key={image}
             src={image}
-            alt={`${project.title} - Image ${index + 1}`}
+            alt={`${project.title} view ${index + 1}`}
             className={inView ? 'scroll-reveal' : ''}
             style={{ transitionDelay: `${index * 0.1}s` }}
           />
