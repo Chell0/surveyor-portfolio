@@ -8,12 +8,12 @@ const Projects = () => {
   });
 
   const projects = [
-    { title: 'Kwale', slug: 'kwale', color: 'black' },
-    { title: 'Lamu', slug: 'lamu', color: 'gray' },
-    { title: 'Project Three', slug: 'project-three', color: 'light' },
-    { title: 'Project Four', slug: 'project-four', color: 'gray' },
-    { title: 'Project Five', slug: 'project-five', color: 'gray' },
-    { title: 'Project Six', slug: 'project-six', color: 'black' },
+    { title: 'Lamu', slug: 'lamu', color: 'black' },
+    { title: 'Kwale', slug: 'kwale', color: 'gray' },
+    { title: 'Malindi', slug: 'malindi', color: 'light' },
+    { title: 'Watamu', slug: 'watamu', color: 'black' },
+    { title: 'Kilifi', slug: 'kilifi', color: 'gray' },
+    { title: 'Jomvu', slug: 'jomvu', color: 'light' },
   ];
 
   return (
@@ -31,7 +31,8 @@ const Projects = () => {
             style={{
               transitionDelay: `${index * 0.1}s`,
               background: project.color === 'black' ? '#000' : project.color === 'gray' ? '#888' : '#fff',
-              color: project.color === 'light' ? '#000' : '#fff'
+              color: project.color === 'light' ? '#000' : '#fff',
+              textDecoration: 'none',
             }}
           >
             <h3>{project.title}</h3>
