@@ -50,6 +50,9 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+.scroll-reveal {
+  animation: fadeInUp 0.8s ease-out both;
+}
 
 /*Responsive*/
 @media (max-width: 768px) {
