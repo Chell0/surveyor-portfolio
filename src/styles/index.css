@@ -49,3 +49,30 @@ body {
 .fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .hero,
+  .about-content,
+  .project-detail-header,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
