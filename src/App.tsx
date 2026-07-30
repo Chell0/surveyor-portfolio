@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PageLoader from './components/PageLoader';
-import './styles/App.css'
+
 
 // Lazy-load pages (only downloaded when visited)
 const Hero = lazy(() => import('./components/Hero'));
