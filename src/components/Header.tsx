@@ -36,17 +36,20 @@ const Header = () => {
         </Link>
       </div>
 
-      <div
+      <button
+        type="button"
         className={`menu-toggle ${menuOpen ? 'active' : ''}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
+        onClick={() => setMenuOpen((open) => !menuOpen)}
+        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={menuOpen}
+        aria-controls="primary-nav"
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
-      <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+      <nav id="primary-nav" className={`nav ${menuOpen ? 'active' : ''}`}>
         {navLinks.map((link) => (
           <Link
             key={link.to}
