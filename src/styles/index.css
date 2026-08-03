@@ -238,6 +238,7 @@ body {
 .section-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -537,13 +538,13 @@ body {
 
 /* Scroll animations */
 .scroll-reveal {
-    opacity: 1;
-    transform: translateY(10px);
+    opacity: 0;
+    transform: translateY(30px);
     transition: all 0.8s ease-out;
 }
 
 .scroll-reveal.active {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0);
 }
 
