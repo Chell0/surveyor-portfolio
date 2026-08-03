@@ -39,7 +39,7 @@ const Header = () => {
       <button
         type="button"
         className={`menu-toggle ${menuOpen ? 'active' : ''}`}
-        onClick={() => setMenuOpen((open) => !menuOpen)}
+        onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
         aria-label={menuOpen ? 'Close menu' : 'Open menu'}
         aria-expanded={menuOpen}
         aria-controls="primary-nav"
