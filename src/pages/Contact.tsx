@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import * as React from "react";
 
 
 const Contact = () => {
@@ -79,7 +80,7 @@ const Contact = () => {
           <button type="submit" className="btn-primary">Send Message →</button>
         </form>
 
-        <div className={`contact-info ${inView ? 'scroll-reveal' : ''}`}>
+        <div className={`contact-info scroll-reveal ${inView ? 'active' : ''}`}>
           <h3>Contact Information</h3>
           <div className="contact-detail">
             <strong>Address</strong>

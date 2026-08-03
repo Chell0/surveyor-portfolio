@@ -58,7 +58,7 @@ const About = () => {
               {skills.map((skill, index) => (
                 <div
                   key={skill}
-                  className={`skill-item ${inView ? 'scroll-reveal' : ''}`}
+                  className={`skill-item scroll-reveal ${inView ? 'active' : ''}`}
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   {index + 1}. {skill}

@@ -49,7 +49,7 @@ const ProjectDetail = () => {
             key={image}
             src={image}
             alt={`${project.title} view ${index + 1}`}
-            className={inView ? 'scroll-reveal' : ''}
+            className={`scroll-reveal ${inView ? 'active' : ''}`}
             style={{ transitionDelay: `${index * 0.1}s` }}
           />
         ))}
